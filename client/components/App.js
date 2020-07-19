@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { categories } from '../../testdata';
+import Gameboard from './Gameboard';
+import Scoreboard from './Scoreboard';
+import Response from './Response';
 
 export default class App extends Component {
   constructor(props) {
@@ -21,9 +24,9 @@ export default class App extends Component {
     return (
       <div id={'app'}>
         What is Reactor 2?
-        {/* Gameboard */}
-        {/* Scoreboard */}
-        {/* Response */}
+        <Gameboard />
+        <Scoreboard />
+        <Response />
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Gameboard = props => {
+  console.log(props);
   return (
     <div data-testid="gameboard" id={props.currentQuestion.question ? 'question' : 'gameboard'}>
       {/* was a question clicked?  */}
